@@ -28,6 +28,30 @@ Add this package to your `pubspec.yaml`:
 dependencies:
   rekognition_face_liveness: ^0.1.0
 ```
+## ⚙️ Setup PreRequisite
+
+Before using the package, you need to configure **Amplify** in your project. Follow these steps:
+
+### 1️⃣ Set Up Amplify
+
+Complete the **[Amplify Quickstart](https://ui.docs.amplify.aws/swift/connected-components/liveness#quick-start)** and **[Step 1: Configure Auth](https://ui.docs.amplify.aws/swift/connected-components/liveness#step-1-configure-auth)** before proceeding.
+
+### 2️⃣ Configure Authentication
+
+#### Android
+
+1. Add the **Amplify configuration file** to your project:
+    - Place `amplifyconfiguration.json` in `android/app/src/main/res/raw/`
+
+#### iOS
+
+1. Add the **Amplify configuration files** to your project:
+    - Place `amplifyconfiguration.json` and `awsconfiguration.json` in the `ios` directory.
+
+2. Open **Xcode** and manually add these files to your project to ensure they are recognized.
+
+3. Update your `ios/Podfile`:
+
 
 ### Android Setup
 
@@ -38,7 +62,7 @@ dependencies:
 ```gradle
 dependencies {
     // AWS Amplify Face Liveness SDK
-    implementation 'com.amplifyframework.ui:liveness:2.1.0'
+    implementation 'com.amplifyframework.ui:liveness:1.4.0'
     implementation 'com.amplifyframework:core:2.27.0'
     implementation 'com.amplifyframework:aws-auth-cognito:2.27.0'
 }

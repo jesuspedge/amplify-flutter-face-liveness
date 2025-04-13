@@ -26,7 +26,7 @@ Add this package to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  rekognition_face_liveness: ^0.1.0
+  face_liveness_detector: ^0.1.0
 ```
 ## ⚙️ Setup PreRequisite
 

@@ -1,4 +1,4 @@
-name: rekognition_face_liveness
+name: face_liveness_detector
 description: A Flutter plugin for AWS Rekognition Face Liveness detection, allowing secure face biometric verification through AWS's Rekognition service.
 version: 0.1.0
 homepage: https://github.com/raichandramohan27ca/amplify-flutter-face-liveness

@@ -102,7 +102,7 @@ flutter_test
 3.3
 file:///C:/Users/raich/AppData/Roaming/FlutterFlow/flutterflow/flutter/packages/flutter_test/
 file:///C:/Users/raich/AppData/Roaming/FlutterFlow/flutterflow/flutter/packages/flutter_test/lib/
-rekognition_face_liveness
+face_liveness_detector
 3.0
 file:///C:/workspace/amplify-ui-flutter-liveness/
 file:///C:/workspace/amplify-ui-flutter-liveness/lib/

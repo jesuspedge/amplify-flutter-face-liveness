@@ -158,13 +158,13 @@
       "languageVersion": "3.3"
     },
     {
-      "name": "rekognition_face_liveness",
+      "name": "face_liveness_detector",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2025-04-13T22:38:32.574851Z",
+  "generated": "2025-04-13T22:46:24.961138Z",
   "generator": "pub",
   "generatorVersion": "3.6.1",
   "flutterRoot": "file:///C:/Users/raich/AppData/Roaming/FlutterFlow/flutterflow/flutter",

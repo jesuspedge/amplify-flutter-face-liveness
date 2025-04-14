@@ -43,14 +43,46 @@ Complete the **[Amplify Quickstart](https://ui.docs.amplify.aws/swift/connected-
 1. Add the **Amplify configuration file** to your project:
     - Place `amplifyconfiguration.json` in `android/app/src/main/res/raw/`
 
+Update android/app/build.gradle:
+
+android {
+    compileSdkVersion 35
+
+    defaultConfig {
+        minSdkVersion 24
+    }
+}
+Ensure that the MainActivity class extends FlutterFragmentActivity instead of FlutterActivity:
+import io.flutter.embedding.android.FlutterFragmentActivity
+
+class MainActivity : FlutterFragmentActivity() {}
+
 #### iOS
+Add the Amplify configuration files to your project:
 
-1. Add the **Amplify configuration files** to your project:
-    - Place `amplifyconfiguration.json` and `awsconfiguration.json` in the `ios` directory.
+Place amplifyconfiguration.json and awsconfiguration.json in the ios directory.
+Open Xcode and manually add these files to your project to ensure they are recognized.
 
-2. Open **Xcode** and manually add these files to your project to ensure they are recognized.
+Update your ios/Podfile:
 
-3. Update your `ios/Podfile`:
+platform :ios, '13.0'
+use_frameworks!
+Run:
+cd ios
+pod install
+cd ..
+3️⃣ Grant Camera Permissions
+Ensure you request camera access in both platforms:
+
+Android
+Add the following permission in AndroidManifest.xml:
+
+<uses-permission android:name="android.permission.CAMERA"/>
+iOS
+Add this to your Info.plist:
+
+<key>NSCameraUsageDescription</key>
+<string>We need access to your camera for face liveness detection.</string>
 
 
 ### Android Setup

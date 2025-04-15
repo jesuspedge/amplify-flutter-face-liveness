@@ -57,7 +57,7 @@ import io.flutter.embedding.android.FlutterFragmentActivity
 
 class MainActivity : FlutterFragmentActivity() {}
 
-#### iOS
+####iOS
 Add the Amplify configuration files to your project:
 
 Place amplifyconfiguration.json and awsconfiguration.json in the ios directory.

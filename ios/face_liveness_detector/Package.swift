@@ -13,6 +13,10 @@ let package = Package(
         .library(
             name: "face_liveness_detector",
             targets: ["face_liveness_detector"]),
+        // Add an additional product name that matches what Flutter is looking for
+        .library(
+            name: "face-liveness-detector",
+            targets: ["face_liveness_detector"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.

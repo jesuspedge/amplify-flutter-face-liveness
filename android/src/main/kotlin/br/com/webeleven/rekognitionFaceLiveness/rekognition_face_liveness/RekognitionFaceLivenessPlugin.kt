@@ -7,8 +7,8 @@ import android.util.Log
 import com.amplifyframework.auth.cognito.AWSCognitoAuthPlugin
 import com.amplifyframework.core.Amplify
 
-/** RekognitionFaceLivenessPlugin */
-class RekognitionFaceLivenessPlugin: FlutterPlugin {
+/** FaceLivenessDetectorPlugin */
+class FaceLivenessDetectorPlugin: FlutterPlugin {
   private val TAG = "FaceLivenessPlugin"
   
   /// The event channel that will handle communication between Flutter and native Android
@@ -31,6 +31,21 @@ class RekognitionFaceLivenessPlugin: FlutterPlugin {
 
   override fun onDetachedFromEngine(binding: FlutterPlugin.FlutterPluginBinding) {
     // No cleanup needed
+  }
+}
+
+// Add backward compatibility with the original plugin name
+/** RekognitionFaceLivenessPlugin */
+class RekognitionFaceLivenessPlugin: FlutterPlugin {
+  private val TAG = "FaceLivenessPlugin"
+  private val delegate = FaceLivenessDetectorPlugin()
+  
+  override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
+    delegate.onAttachedToEngine(flutterPluginBinding)
+  }
+
+  override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
+    delegate.onDetachedFromEngine(binding)
   }
 }
 

@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'face_liveness_detector'
-  s.version          = '0.1.4'
+  s.version          = '0.2.0'
   s.summary          = 'AWS Rekognition Face Liveness detection for Flutter'
   s.description      = <<-DESC
 A Flutter plugin for AWS Rekognition Face Liveness detection, allowing secure face biometric verification through AWS's Rekognition service.
@@ -23,4 +23,8 @@ A Flutter plugin for AWS Rekognition Face Liveness detection, allowing secure fa
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
   s.swift_version = '5.0'
+  
+  # This is essential for proper module naming in Swift
+  s.module_name = 'face_liveness_detector'
+  s.static_framework = true
 end 

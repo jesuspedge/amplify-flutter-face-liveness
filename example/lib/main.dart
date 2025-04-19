@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rekognition_face_liveness/face_liveness_detector.dart';
+import 'package:face_liveness_detector/face_liveness_detector.dart';
 import 'aws_services.dart';
 
 void main() {

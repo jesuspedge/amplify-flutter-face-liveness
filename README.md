@@ -1,6 +1,6 @@
 # AWS Rekognition Face Liveness Plugin for Flutter
 
-[![pub package](https://img.shields.io/pub/v/rekognition_face_liveness.svg)](https://pub.dev/packages/rekognition_face_liveness)
+[![pub package](https://img.shields.io/pub/v/face_liveness_detector.svg)](https://pub.dev/packages/face_liveness_detector)
 
 A Flutter plugin for AWS Rekognition Face Liveness detection, allowing secure face biometric verification using AWS's Rekognition service. This package provides a bridge to the native AWS Amplify Face Liveness SDKs for both Android and iOS.
 
@@ -144,7 +144,7 @@ Future<Map<String, String>> getSessionFromBackend() async {
 ### 3. Use the FaceLivenessDetector Widget
 
 ```dart
-import 'package:rekognition_face_liveness/face_liveness_detector.dart';
+import 'package:face_liveness_detector/face_liveness_detector.dart';
 
 // ...
 

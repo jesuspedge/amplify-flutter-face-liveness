@@ -9,7 +9,7 @@ import com.amplifyframework.core.Amplify
 
 /** RekognitionFaceLivenessPlugin */
 class RekognitionFaceLivenessPlugin: FlutterPlugin {
-  private val TAG = "RekognitionFaceLivenessPlugin"
+  private val TAG = "FaceLivenessPlugin"
   
   /// The event channel that will handle communication between Flutter and native Android
   private lateinit var eventChannel : EventChannel
@@ -26,7 +26,7 @@ class RekognitionFaceLivenessPlugin: FlutterPlugin {
     Amplify.addPlugin(AWSCognitoAuthPlugin())
     Amplify.configure(flutterPluginBinding.applicationContext)
       
-    Log.i(TAG, "RekognitionFaceLivenessPlugin initialized with custom credentials provider")
+    Log.i(TAG, "FaceLivenessPlugin initialized with custom credentials provider")
   }
 
   override fun onDetachedFromEngine(binding: FlutterPlugin.FlutterPluginBinding) {

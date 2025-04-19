@@ -13,7 +13,7 @@ A Flutter plugin for AWS Rekognition Face Liveness detection, allowing secure fa
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'raichandramohan27ca' => 'email@example.com' }
   s.source           = { :path => '.' }
-  s.source_files = 'rekognition_face_liveness/Sources/rekognition_face_liveness/**/*.swift'
+  s.source_files = 'face_liveness_detector/Sources/face_liveness_detector/**/*.swift'
   s.dependency 'Flutter'
   s.dependency 'FaceLiveness'
   s.dependency 'Amplify'

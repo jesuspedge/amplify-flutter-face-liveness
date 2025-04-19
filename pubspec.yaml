@@ -27,6 +27,7 @@ flutter:
         pluginClass: RekognitionFaceLivenessPlugin
       ios:
         pluginClass: RekognitionFaceLivenessPlugin
+        podspec: ios/face_liveness_detector.podspec
 
 topics:
   - rekognition

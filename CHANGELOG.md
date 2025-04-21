@@ -1,4 +1,4 @@
-## 0.1.0
+## 0.2.0
 
 * Initial release.
 * Basic implementation of FaceLivenessDetector widget.

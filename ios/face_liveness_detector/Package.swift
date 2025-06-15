@@ -16,7 +16,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/aws-amplify/amplify-swift", from: "2.3.1"),
-        .package(url: "https://github.com/aws-amplify/amplify-ui-swift-liveness", from: "1.2.18")
+        .package(url: "https://github.com/aws-amplify/amplify-ui-swift-liveness", from: "1.3.5")
     ],
     targets: [
         .target(

@@ -14,7 +14,7 @@ Note: This plugin requires manual setup of AWS Amplify Face Liveness dependencie
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'raichandramohan27ca' => 'email@example.com' }
   s.source           = { :path => '.' }
-  s.source_files = 'Classes/**/*'
+  s.source_files = 'face_liveness_detector/Sources/face_liveness_detector/**/*.swift'
   s.dependency 'Flutter'
   s.platform = :ios, '11.0'
 

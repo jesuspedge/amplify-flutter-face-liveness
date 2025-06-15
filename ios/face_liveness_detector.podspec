@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'face_liveness_detector'
-  s.version          = '0.2.0'
+  s.version          = '0.2.2'
   s.summary          = 'AWS Rekognition Face Liveness detection for Flutter'
   s.description      = <<-DESC
 A Flutter plugin for AWS Rekognition Face Liveness detection, allowing secure face biometric verification through AWS's Rekognition service.
@@ -15,9 +15,6 @@ A Flutter plugin for AWS Rekognition Face Liveness detection, allowing secure fa
   s.source           = { :path => '.' }
   s.source_files = 'face_liveness_detector/Sources/face_liveness_detector/**/*.swift'
   s.dependency 'Flutter'
-  s.dependency 'Amplify', '~> 2.46.1'
-  s.dependency 'AmplifyUILiveness', '~> 1.3.5'
-  s.dependency 'AmplifyUtilsNotifications', '~> 1.1.1'
   s.platform = :ios, '14.0'
 
   # Flutter.framework does not contain a i386 slice.

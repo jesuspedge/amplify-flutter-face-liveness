@@ -102,15 +102,33 @@ dependencies {
 
 ### iOS Setup
 
-1. Make sure you have the AWS Amplify configuration set up properly in your iOS project.
+**Important**: The AWS Amplify Face Liveness SDK is distributed through Swift Package Manager, not CocoaPods. You need to add the dependencies manually to your iOS project.
 
-2. Add the following dependencies to your `Podfile`:
+#### Step 1: Add Swift Package Dependencies
 
-```ruby
-pod 'Amplify'
-pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
-pod 'FaceLiveness'
-```
+1. Open your iOS project in Xcode (`ios/Runner.xcworkspace`)
+2. Go to **File > Add Package Dependencies...**
+3. Add the following packages:
+
+**AWS Amplify Swift:**
+- URL: `https://github.com/aws-amplify/amplify-swift`
+- Version: `2.46.1` or later
+- Select these products:
+  - `Amplify`
+  - `AWSCognitoAuthPlugin`
+
+**AWS Amplify UI Liveness:**
+- URL: `https://github.com/aws-amplify/amplify-ui-swift-liveness`
+- Version: `1.3.5` or later
+- Select the `FaceLiveness` product
+
+#### Step 2: Configure Amplify
+
+Make sure you have the AWS Amplify configuration set up properly in your iOS project as described in the [AWS Amplify documentation](https://docs.amplify.aws/lib/project-setup/create-application/q/platform/flutter/).
+
+#### Step 3: Add Configuration Files
+
+Place your `amplifyconfiguration.json` and `awsconfiguration.json` files in the iOS directory and add them to your Xcode project.
 
 ## Usage
 

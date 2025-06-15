@@ -1,5 +1,12 @@
 ## 0.2.2
 
+* Fixed CocoaPods dependency issue by removing non-existent AWS dependencies
+* AWS Amplify Face Liveness SDK dependencies must now be added manually using Swift Package Manager
+* Updated iOS setup instructions to reflect proper dependency management
+* Resolved pod install failures in consumer projects
+
+## 0.2.1
+
 * Updated AWS Amplify dependencies to latest versions
 * Amplify updated to 2.46.1
 * AWSCognitoAuthPlugin updated to 2.46.1  

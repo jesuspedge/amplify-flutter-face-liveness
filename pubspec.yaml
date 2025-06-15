@@ -1,5 +1,5 @@
 name: face_liveness_detector
-description: A Flutter plugin for AWS Rekognition Face Liveness detection. Note: iOS setup requires manual addition of AWS Amplify Face Liveness dependencies in Xcode.
+description: A Flutter plugin for AWS Rekognition Face Liveness detection.
 version: 0.2.3
 homepage: https://github.com/raichandramohan27ca/amplify-flutter-face-liveness
 repository: https://github.com/raichandramohan27ca/amplify-flutter-face-liveness

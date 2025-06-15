@@ -1,4 +1,4 @@
-## 0.2.1
+## 0.2.2
 
 * Updated AWS Amplify dependencies to latest versions
 * Amplify updated to 2.46.1

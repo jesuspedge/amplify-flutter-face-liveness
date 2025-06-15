@@ -1,3 +1,11 @@
+## 0.2.3
+
+* Improved user experience with clear setup instructions
+* Added post-install script that displays detailed AWS Amplify Face Liveness setup instructions
+* Enhanced error messaging and guidance for iOS dependency management
+* Updated documentation to clearly explain the manual setup requirement
+* Better integration with Flutter plugin ecosystem standards
+
 ## 0.2.2
 
 * Fixed CocoaPods dependency issue by removing non-existent AWS dependencies

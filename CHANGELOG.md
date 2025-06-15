@@ -1,4 +1,4 @@
-## 0.2.4
+## 0.2.5
 
 * Improved user experience with clear setup instructions
 * Added post-install script that displays detailed AWS Amplify Face Liveness setup instructions

@@ -1,3 +1,12 @@
+## 0.2.1
+
+* Updated AWS Amplify dependencies to latest versions
+* Amplify updated to 2.46.1
+* AWSCognitoAuthPlugin updated to 2.46.1  
+* AmplifyUILiveness updated to 1.3.5
+* Added AmplifyUtilsNotifications dependency
+* Improved compatibility with latest AWS Amplify Face Liveness SDK
+
 ## 0.2.0
 
 * Initial release.

@@ -2,7 +2,7 @@ group = "br.com.webeleven.rekognitionFaceLiveness.rekognition_face_liveness"
 version = "1.0-SNAPSHOT"
 
 buildscript {
-    ext.kotlin_version = "1.8.22"
+    ext.kotlin_version = "2.1.0"
     repositories {
         google()
         mavenCentral()
@@ -23,6 +23,7 @@ allprojects {
 
 apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
+apply plugin: "org.jetbrains.kotlin.plugin.compose"
 
 android {
     namespace = "br.com.webeleven.rekognitionFaceLiveness.rekognition_face_liveness"
@@ -70,7 +71,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion '1.4.8'
+        kotlinCompilerExtensionVersion '1.5.15'
     }
 }
 

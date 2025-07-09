@@ -1,3 +1,7 @@
+##0.2.6
+* updated kotlin
+
+
 ## 0.2.5
 
 * Improved user experience with clear setup instructions

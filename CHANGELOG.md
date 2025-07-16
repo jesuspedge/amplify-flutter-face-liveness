@@ -1,3 +1,6 @@
+##0.2.8
+* updated ios plugin class name
+
 ##0.2.7
 * updated kotlin
 
